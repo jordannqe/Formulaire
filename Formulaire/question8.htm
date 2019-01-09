@@ -1,0 +1,90 @@
+ <!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="questionnaire.css">
+ <title>IUT Lens</title>
+ <link rel="icon" type="image/png" href="images/logo_URL.gif"/> <!--Icone dans la barre du navigateur-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ 
+<body>
+<!--MENU-->
+<nav>
+	<ul id="menu">
+		<li><a class="boutonVert" href="index.htm">Acceuil</a></li>
+		<li><a class="boutonRouge" href="statistiques.html" >Statistiques</a></li>
+		<li><a class="boutonOrange" href="questionnaireIntro.htm" >Questionnaire</a></li>
+		<li><a class="boutonJaune" href="Temoignage.html" >T&eacute;moignage</a></li>
+		<li><a class="boutonCV" href="CV.html" >Tuto CV</a></li>
+		<li><a class="boutonMauve" href="contact.html" >Contact</a></li>
+		<li><img id="logo-iut" src="images/logo_Iut.JPG"  alt="page d'accueil du site de l'iut de Lens"> </li>
+		<li><a href="CVA.html" class="anglais" id="boutonAnglais"></a></li>
+		<li><a href="CV.html" class="francais" id="boutonFrancais"></a></li>
+		<li><a href="https://www.facebook.com/IUT.DE.LENS/?fref=ts" class="facebook" id="boutonFacebook"></a></li>
+		<li><a href="https://twitter.com/IUT_lens" class="twitter" id="boutonTwitter"></a></li>
+		<li><a href="https://www.instagram.com/explore/locations/322245/" class="instagram" id="boutonInstagram"></a></li>
+		<li><a href="https://www.youtube.com/user/servicecomiut" class="youtube" id="boutonYoutube"></a></li>
+	</ul>
+</nav>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+
+<form method="post"> 
+<fieldset>
+	<legend id="questionNumero">Question 8</legend> 			
+<br>	
+			<div id="questionPosee">Pour réussir à l’université, les éléments essentiels sont :</div><br>
+			<div id="questionAide">Choisissez la bonne réponse:</div><br>
+			<input type="checkbox" name="box" value ="cours" />Fournir un travail régulier tout au long de l’année<br>
+			<input type="checkbox" name="test[]" value ="cours" />Préparer un projet personnel et professionnel<br>
+			<input type="checkbox" name="test[]" value ="cours" />Participer à toutes les soirées étudiantes<br>
+			<input type="checkbox" name="test[]" value ="cours" />Organiser son travail pour gagner progressivement en autonomie<br>
+			</fieldset>
+</form>
+<div id="flip"><input type="button" value="Reponse"></div>
+<div id="panel"><h3>La réponse est :</h3>
+
+<div class="reponse-vrai">
+☑		Fournir un travail régulier tout au long de l’année
+☑		Préparer un projet personnel et professionnel
+☑		Organiser son travail pour gagner progressivement en autonomie
+</div><br>
+
+<div class="texte">
+Le <b>travail personnel</b>, en groupe ou en autonomie, est indispensable pour réussir à l’Université. Le travail personnel doit s’appuyer sur de bonnes méthodes d’apprentissage que les équipes pédagogiques vous aideront à acquérir et à renforcer. <b>Définir son projet personnel et professionnel</b> permet de maintenir une bonne motivation et de rebondir en cas de difficultés.
+<br></div>
+
+<div class="texte">
+En plus du <b>contrôle terminal</b> des connaissances à la fin de chaque semestre, un <b>contrôle continu</b> a été mis en place pour permettre d’évaluer la progression des étudiants et de réduire le risque de décrochage. Le contrôle continu repose sur deux à quatre évaluations au cours du semestre en fonction des licences. Les sessions d’examen final permettent de faire le point sur l’assimilation globale des connaissances et des compétences.
+Une session de rattrapage est organisée à la fin de l’année pour l’ensemble des cours donnés au premier et au second semestre.</div>
+
+<div class="texte">
+De nouveaux espaces de formation, les « salles actives »,  bénéficient d’aménagements innovants comme un tableau numérique interactif, des écrans de projection, un éclairage adapté au travail sur écran, ainsi que des bandeaux électriques et des bancs de charge pour recharger plus facilement les équipements. Ces salles de TD encouragent le travail en équipe grâce à des murs d’expression, un mobilier léger et modulaire et une acoustique soignée. Conçues pour expérimenter des méthodes actives, elles peuvent aussi accueillir des cours traditionnels. 
+<br></div>
+
+<div class="texte">
+Attention, dans toutes les formations, le travail personnel, à la maison ou en bibliothèque (espaces de travail conviviaux et dédiés au travail collectif), est très important et vous occupera autant sinon plus que le temps passé en salle de cours. <br>
+</div>
+
+<form action="./question7.htm">
+    <input type="submit" value="Precedent"/>
+</form> 
+
+<form action="./question9.htm">
+    <input type="submit" value="Suivant"/>
+    
+</form> 
+</div>
+</body>
+</html>
+
+
+

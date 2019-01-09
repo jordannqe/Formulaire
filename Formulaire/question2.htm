@@ -1,0 +1,110 @@
+ <!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="questionnaire.css">
+ <title>IUT Lens</title>
+ <link rel="icon" type="image/png" href="images/logo_URL.gif"/> <!--Icone dans la barre du navigateur-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ 
+<body>
+<!--MENU-->
+<nav>
+	<ul id="menu">
+		<li><a class="boutonVert" href="index.htm">Acceuil</a></li>
+		<li><a class="boutonRouge" href="statistiques.html" >Statistiques</a></li>
+		<li><a class="boutonOrange" href="questionnaireIntro.htm" >Questionnaire</a></li>
+		<li><a class="boutonJaune" href="Temoignage.html" >T&eacute;moignage</a></li>
+		<li><a class="boutonCV" href="CV.html" >Tuto CV</a></li>
+		<li><a class="boutonMauve" href="contact.html" >Contact</a></li>
+		<li><img id="logo-iut" src="images/logo_Iut.JPG"  alt="page d'accueil du site de l'iut de Lens"> </li>
+		<li><a href="CVA.html" class="anglais" id="boutonAnglais"></a></li>
+		<li><a href="CV.html" class="francais" id="boutonFrancais"></a></li>
+		<li><a href="https://www.facebook.com/IUT.DE.LENS/?fref=ts" class="facebook" id="boutonFacebook"></a></li>
+		<li><a href="https://twitter.com/IUT_lens" class="twitter" id="boutonTwitter"></a></li>
+		<li><a href="https://www.instagram.com/explore/locations/322245/" class="instagram" id="boutonInstagram"></a></li>
+		<li><a href="https://www.youtube.com/user/servicecomiut" class="youtube" id="boutonYoutube"></a></li>
+	</ul>
+</nav>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+
+<form method="post"> 
+<fieldset>
+	<legend id="questionNumero">Question 2</legend> 			
+	<div><br>	
+			<div id="questionPosee">L’Université d’Artois est présente dans les villes de :</div><br>
+			<div id="questionAide">Choisissez la/les bonnes réponse(s) :</div><br>
+			<input type="checkbox" name="box" value ="cours" />Suivre des cours<br>
+			<input type="checkbox" name="test[]" value ="cours" />Travailler à la bibliothèque seul ou en groupe<br>
+			<input type="checkbox" name="test[]" value ="cours" />Participer à des activités culturelles, associatives et sportives<br>
+			<input type="checkbox" name="test[]" value ="cours" />Suivre une partie de la formation à l’étranger<br>
+			<input type="checkbox" name="test[]" value ="cours" />Bénéficier d’une prévention médicale gratuite<br>
+			<input type="checkbox" name="test[]" value ="cours"/>
+			Bénéficier d’un accompagnement individualisé pour mon orientation et mon insertion professionnelle<br>
+			<input type="checkbox" name="test[]" value ="cours"/>
+			Exposer mes créations artistiques<br><br>
+			</div>
+			</fieldset>
+</form>
+<div id="flip"><input type="button" value="Reponse"></div>
+<div id="panel"><h3>Les réponses sont :</h3>
+
+<div class="reponse-vrai">
+☑		Suivre des cours
+☑		Bénéficier d’un accompagnement individualisé pour mon orientation et mon insertion professionnelle <br>
+☑		Travailler à la bibliothèque seul ou en groupe <br>
+☑		Participer à des activités culturelles, associatives et sportives <br>
+☑		Suivre une partie de la formation à l’étranger <br>
+☑		Bénéficier d’une prévention médicale gratuite <br>
+</div>
+
+<img src="images/question2.jpg" alt="question2" style="width:324px;height:228px;">
+<br>
+
+<div class="texte">
+En plus des cours, vous disposez d’une bibliothèque universitaire sur chacun des pôles, avec des horaires d’ouverture étendus, vous offrant des espaces de travail conviviaux et l’accès à des ressources imprimées et numériques. Des espaces pour les travaux de groupes et du matériel dédié aux personnes handicapées (loupes, logiciel adaptés etc.) sont à votre disposition.</div>
+
+<div class="texte">
+Profitez de votre passage à l’université pour découvrir de nouveaux univers avec le Service Vie Culturelle et Associative qui vous propose des cycles de films, des concerts, des spectacles de jeunes compagnies ou d’artistes plus confirmés, des expositions, des ateliers artistiques  (théâtre, radio, danse, photographie...) Plusieurs lieux et équipements peuvent devenir vôtres pour développer vos talents (La Ruche : salle de spectacle de la maison de l’étudiant, une salle de répétition, des pianos, un labo photo…)</div>
+
+<div class="texte">
+Vous pourrez également vous investir dans une association étudiante.
+Le Service Universitaire des activités physiques et sportives (SUAPS) vous propose 35 activités sportives par semaine sur les différents sites de l’université et organise tournois intersites, fête internationale du sport, stage de découverte d’activité de pleine nature, spectacle, danse et arts du cirque. </div>
+
+<div class="texte">
+Les Relations Internationales vous proposent différents programmes de séjours d’études à l’étranger pour un semestre ou une année universitaire dans une université partenaire, ou de réaliser un stage à l’étranger dans le cadre de votre cursus.</div>
+
+<div class="texte">
+Le Service Universitaire de Médecine Préventive et de Promotion de la Santé (SUMPPS)  vous permet de bénéficier de services gratuits et confidentiels : visites médicalisées de prévention (santé globale, conseils en vaccination, nutrition, aide à la contraception), soutien psychologique pour vous aider et vous accompagner dans vos études, journées « Don du Sang », actions de prévention et de sensibilisation (dépistages visuel, auditif et diabétique). Des Assistantes sociales apportent « Écoute et Conseils » aux étudiants afin de remédier à leurs difficultés (administratives, financières ou personnelles)</div>
+
+<div class="texte">
+Le Service d’Accueil, d’Orientation et d’Insertion Professionnelle (SAOIP) vous accompagne dans votre choix d’études et d’orientation et dans la construction de votre projet professionnel. En lien avec le monde professionnel, le SAOIP multiplie les rencontres entre les étudiants et les entreprises lors de conférences, ateliers, forums de l’emploi et vous aide dans la rédaction de votre CV et lettre de motivation.
+<br></div>
+
+<form action="./question1.htm">
+    <input type="submit" value="Precedent"/>
+</form> 
+
+<form action="./question3.htm">
+    <input type="submit" value="Suivant"/>
+</form> 
+</div>
+
+
+<br>
+
+
+</body>
+</html>
+
+
+

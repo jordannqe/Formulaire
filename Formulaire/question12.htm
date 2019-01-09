@@ -1,0 +1,98 @@
+ <!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="questionnaire.css">
+ <title>IUT Lens</title>
+ <link rel="icon" type="image/png" href="images/logo_URL.gif"/> <!--Icone dans la barre du navigateur-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ 
+<body>
+<!--MENU-->
+<nav>
+	<ul id="menu">
+		<li><a class="boutonVert" href="index.htm">Acceuil</a></li>
+		<li><a class="boutonRouge" href="statistiques.html" >Statistiques</a></li>
+		<li><a class="boutonOrange" href="questionnaireIntro.htm" >Questionnaire</a></li>
+		<li><a class="boutonJaune" href="Temoignage.html" >T&eacute;moignage</a></li>
+		<li><a class="boutonCV" href="CV.html" >Tuto CV</a></li>
+		<li><a class="boutonMauve" href="contact.html" >Contact</a></li>
+		<li><img id="logo-iut" src="images/logo_Iut.JPG"  alt="page d'accueil du site de l'iut de Lens"> </li>
+		<li><a href="CVA.html" class="anglais" id="boutonAnglais"></a></li>
+		<li><a href="CV.html" class="francais" id="boutonFrancais"></a></li>
+		<li><a href="https://www.facebook.com/IUT.DE.LENS/?fref=ts" class="facebook" id="boutonFacebook"></a></li>
+		<li><a href="https://twitter.com/IUT_lens" class="twitter" id="boutonTwitter"></a></li>
+		<li><a href="https://www.instagram.com/explore/locations/322245/" class="instagram" id="boutonInstagram"></a></li>
+		<li><a href="https://www.youtube.com/user/servicecomiut" class="youtube" id="boutonYoutube"></a></li>
+	</ul>
+</nav>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+
+<form method="post"> 
+<fieldset>
+	<legend id="questionNumero">Question 12</legend> 			
+<br>	
+			<div id="questionPosee">Comment préparer mon arrivée à l’Université d’Artois :</div><br>
+			<div id="questionAide">Choisissez la bonne réponse:</div><br>
+			<input type="checkbox" name="box" value ="cours" />Participer aux forums, salons d’informations et de l’étudiant<br>
+			<input type="checkbox" name="test[]" value ="cours" />Me rendre à la Journée Portes Ouvertes de l’Université d’Artois<br>
+			<input type="checkbox" name="test[]" value ="cours" />Me renseigner auprès de mon professeur principal ou du Conseiller d’Orientation Psychologue du lycée<br>
+			<input type="checkbox" name="test[]" value ="cours" />Rencontrer les conseillères de l’Université<br>
+			<input type="checkbox" name="test[]" value ="cours" />Passer une journée à l’université aux côtés des étudiants<br>
+			</fieldset>
+</form>
+<div id="flip"><input type="button" value="Reponse"></div>
+<div id="panel"><h3>La réponse est :</h3>
+
+<div class="reponse-vrai">
+☑		Participer aux forums, salons d’informations et de l’étudiant<br/>
+☑		Me rendre à la Journée Portes Ouvertes de l’Université d’Artois<br/>
+☑		Me renseigner auprès de mon professeur principal ou du Conseiller d’Orientation Psychologue du lycée<br/>
+☑		Rencontrer les conseillères de l’Université<br/>
+☑		Passer une journée à l’université aux côtés des étudiants<br/>
+
+</div><br>
+
+L’université d’Artois sera présente aux Salon de l’étudiant d’Arras <b>le 25 novembre 2016</b> et de Lille <b>du 12 au 14 Janvier 2017</b>
+.
+<div class="texte">
+La Journée Portes Ouvertes : <br>
+Tous les ans, l’Université d’Artois ouvre ses portes fin Janvier/début Février.
+<b>Cette année, elle se déroulera le samedi 28 janvier 2017 de 9h à 17h, sur tous les sites.</b><br>
+Mobilisant professeurs, personnels administratifs et étudiants, cette journée dédiée au public est l’occasion pour les futurs étudiants de découvrir leurs lieux d’études et l’offre de formation de l’Université.<br>
+Des stands d’information les renseignent sur les nombreuses filières dispensées par les facultés et les IUT ainsi que sur les services à l’étudiant et la vie associative. Les étudiants les guident à travers le campus pour leur permettre de visiter les bâtiments, laboratoires, salles de cours, amphithéâtres, bibliothèques universitaires... 
+<br></div>
+
+<div class="texte">
+Les salles de documentation:<br>
+Sur chaque pôle de l’Université, les étudiants, mais aussi les lycéens sont accueillis par les conseillères d’orientation, dans des espaces de travail conviviaux. <br>
+Elles les accompagnent individuellement dans toutes leurs démarches d’orientation et d’insertion professionnelle.
+Les salles offrent une documentation complète (ouvrages, ressources numériques), régulièrement mise à jour, sur les filières d’études supérieures, les secteurs professionnels, les entreprises et le marché de l’emploi au niveau régional mais aussi national.</div>
+
+<div class="texte">
+Les Journées d'immersion :<br>
+Ces journées vous proposent de vivre une ou plusieurs journées dans la peau d’un étudiant. Elles se déroulent habituellement d’octobre à février.<br>
+Chaque filière propose un programme spécifique : cours magistraux et/ou travaux dirigés, conférences sur le contenu des études de la filière et les objectifs visés en terme de formation, échanges avec les enseignants et les étudiants, visites des laboratoires, déjeuner au Restaurant Universitaire.
+Accéder au dispositif d'inscription (selon le calendrier d'inscription) : lien à ajouter
+
+</div>
+
+<form action="./question11.htm">
+    <input type="submit" value="Precedent"/>
+</form> 
+
+</div>
+</body>
+</html>
+
+
+

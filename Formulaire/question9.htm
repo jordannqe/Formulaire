@@ -1,0 +1,88 @@
+ <!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="questionnaire.css">
+ <title>IUT Lens</title>
+ <link rel="icon" type="image/png" href="images/logo_URL.gif"/> <!--Icone dans la barre du navigateur-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ 
+<body>
+<!--MENU-->
+<nav>
+	<ul id="menu">
+		<li><a class="boutonVert" href="index.htm">Acceuil</a></li>
+		<li><a class="boutonRouge" href="statistiques.html" >Statistiques</a></li>
+		<li><a class="boutonOrange" href="questionnaireIntro.htm" >Questionnaire</a></li>
+		<li><a class="boutonJaune" href="Temoignage.html" >T&eacute;moignage</a></li>
+		<li><a class="boutonCV" href="CV.html" >Tuto CV</a></li>
+		<li><a class="boutonMauve" href="contact.html" >Contact</a></li>
+		<li><img id="logo-iut" src="images/logo_Iut.JPG"  alt="page d'accueil du site de l'iut de Lens"> </li>
+		<li><a href="CVA.html" class="anglais" id="boutonAnglais"></a></li>
+		<li><a href="CV.html" class="francais" id="boutonFrancais"></a></li>
+		<li><a href="https://www.facebook.com/IUT.DE.LENS/?fref=ts" class="facebook" id="boutonFacebook"></a></li>
+		<li><a href="https://twitter.com/IUT_lens" class="twitter" id="boutonTwitter"></a></li>
+		<li><a href="https://www.instagram.com/explore/locations/322245/" class="instagram" id="boutonInstagram"></a></li>
+		<li><a href="https://www.youtube.com/user/servicecomiut" class="youtube" id="boutonYoutube"></a></li>
+	</ul>
+</nav>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+
+<form method="post"> 
+<fieldset>
+	<legend id="questionNumero">Question 9</legend> 			
+<br>	
+			<div id="questionPosee">Les dispositifs d’aide à la réussite à l’Université d’Artois sont :</div><br>
+			<div id="questionAide">Choisissez la bonne réponse:</div><br>
+			<input type="checkbox" name="box" value ="cours" />Du tutorat	<br>
+			<input type="checkbox" name="test[]" value ="cours" />De l’accompagnement par des enseignants-référents en première année<br>
+			<input type="checkbox" name="test[]" value ="cours" />Des dispositifs de remise à niveau<br>
+			<input type="checkbox" name="test[]" value ="cours" />Des ateliers d’accompagnement à la construction du projet professionnel<br>
+			<input type="checkbox" name="test[]" value ="cours" />Des dispositifs d’innovation pédagogique<br>
+			</fieldset>
+</form>
+<div id="flip"><input type="button" value="Reponse"></div>
+<div id="panel"><h3>La réponse est :</h3>
+
+<div class="reponse-vrai">
+☑		Du tutorat
+☑		De l’accompagnement d’enseignants-référents en première année
+☑		Des dispositifs de remise à niveau
+☑		Des ateliers d’accompagnement à la construction du projet professionnel
+☑		Des dispositifs d’innovation pédagogique
+</div><br>
+
+<div class="texte">
+Tous les étudiants de Licence bénéficient du dispositif d’« Aide à la réussite » avec notamment des heures d’accompagnement. 
+<br></div>
+
+<div class="texte">
+Des enseignants référents ont pour rôle d’assurer en première année l’encadrement pédagogique et humain de groupes d’une vingtaine d’étudiants durant toute la durée du semestre, de la pré-rentrée jusqu’à la proclamation des résultats. Un suivi individuel doit favoriser un réel climat de confiance. Une permanence régulière permet de veiller à l’assiduité, d’effectuer un bilan à mi-parcours et de rencontrer les étudiants afin de leur apporter le soutien nécessaire dans la réussite de leurs études.</div>
+
+<div class="texte">
+Des ateliers à la carte, mis en place par le Service d’Accueil, d’Orientation et d’Insertion Professionnelle (SAOIP), permettront aux étudiants, en présentiel et à distance, de travailler leur projet professionnel : choisir son parcours d’études, préparer sa recherche de stage ou d’emploi, préparer ses outils de communication…
+<br></div>
+
+<form action="./question8.htm">
+    <input type="submit" value="Precedent"/>
+</form> 
+
+<form action="./question10.htm">
+    <input type="submit" value="Suivant"/>
+    
+</form> 
+</div>
+</body>
+</html>
+
+
+

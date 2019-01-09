@@ -1,0 +1,96 @@
+ <!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="questionnaire.css">
+ <title>IUT Lens</title>
+ <link rel="icon" type="image/png" href="images/logo_URL.gif"/> <!--Icone dans la barre du navigateur-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ 
+<body>
+<!--MENU-->
+<nav>
+	<ul id="menu">
+		<li><a class="boutonVert" href="index.htm">Acceuil</a></li>
+		<li><a class="boutonRouge" href="statistiques.html" >Statistiques</a></li>
+		<li><a class="boutonOrange" href="questionnaireIntro.htm" >Questionnaire</a></li>
+		<li><a class="boutonJaune" href="Temoignage.html" >T&eacute;moignage</a></li>
+		<li><a class="boutonCV" href="CV.html" >Tuto CV</a></li>
+		<li><a class="boutonMauve" href="contact.html" >Contact</a></li>
+		<li><img id="logo-iut" src="images/logo_Iut.JPG"  alt="page d'accueil du site de l'iut de Lens"> </li>
+		<li><a href="CVA.html" class="anglais" id="boutonAnglais"></a></li>
+		<li><a href="CV.html" class="francais" id="boutonFrancais"></a></li>
+		<li><a href="https://www.facebook.com/IUT.DE.LENS/?fref=ts" class="facebook" id="boutonFacebook"></a></li>
+		<li><a href="https://twitter.com/IUT_lens" class="twitter" id="boutonTwitter"></a></li>
+		<li><a href="https://www.instagram.com/explore/locations/322245/" class="instagram" id="boutonInstagram"></a></li>
+		<li><a href="https://www.youtube.com/user/servicecomiut" class="youtube" id="boutonYoutube"></a></li>
+	</ul>
+</nav>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+
+<form method="post"> 
+<fieldset>
+	<legend id="questionNumero">Question 7</legend> 			
+<br>	
+			<div id="questionPosee">La formation à l’université comprend :</div><br>
+			<div id="questionAide">Choisissez la bonne réponse:</div><br>
+			<input type="checkbox" name="box" value ="cours" />Des cours en amphithéâtre	<br>
+			<input type="checkbox" name="test[]" value ="cours" />De nombreuses séances en petits groupes<br>
+			<input type="checkbox" name="test[]" value ="cours" />Des cours en ligne<br>
+			<input type="checkbox" name="test[]" value ="cours" />Des projets à développer<br>
+			<input type="checkbox" name="test[]" value ="cours" />Des stages en entreprises<br>
+			</fieldset>
+</form>
+<div id="flip"><input type="button" value="Reponse"></div>
+<div id="panel"><h3>La réponse est :</h3>
+
+<div class="reponse-vrai">
+☑		Quelques cours en amphithéâtre
+☑		De nombreuses séances en petits groupes
+☑		Des cours en ligne
+☑		Des projets à développer
+☑		Des stages en entreprises
+</div><br>
+
+<img src="images/etu1.png" alt="etude" style="width:224px;height:228px;">
+<img src="images/etu2.jpg" alt="etude" style="width:224px;height:228px;">
+
+<div class="texte">
+Les cours en amphithéâtre sont relativement peu nombreux à l’Université d’Artois. Les enseignements se font majoritairement en petits groupes. 
+<br></div>
+
+<div class="texte">
+La Maison des langues de l’Université d’Artois est un espace multimédia dédié à l’apprentissage, au perfectionnement et à la pratique des langues étrangères en autoformation guidée. Ce mode d’apprentissage permet à chaque étudiant de développer en autonomie, à son rythme et selon ses centres d’intérêt des compétences linguistiques orales et écrites.
+Son accès est libre et gratuit pour tous les étudiants de l’Université d’Artois, qu’ils soient ou non spécialistes en Langues étrangères..</div>
+
+<div class="texte">
+De nouveaux espaces de formation, les « salles actives »,  bénéficient d’aménagements innovants comme un tableau numérique interactif, des écrans de projection, un éclairage adapté au travail sur écran, ainsi que des bandeaux électriques et des bancs de charge pour recharger plus facilement les équipements. Ces salles de TD encouragent le travail en équipe grâce à des murs d’expression, un mobilier léger et modulaire et une acoustique soignée. Conçues pour expérimenter des méthodes actives, elles peuvent aussi accueillir des cours traditionnels. 
+<br></div>
+
+<div class="texte">
+Attention, dans toutes les formations, le travail personnel, à la maison ou en bibliothèque (espaces de travail conviviaux et dédiés au travail collectif), est très important et vous occupera autant sinon plus que le temps passé en salle de cours. <br>
+</div>
+
+<form action="./question6.htm">
+    <input type="submit" value="Precedent"/>
+</form> 
+
+<form action="./question8.htm">
+    <input type="submit" value="Suivant"/>
+    
+</form> 
+</div>
+</body>
+</html>
+
+
+

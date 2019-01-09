@@ -1,0 +1,104 @@
+ <!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="questionnaire.css">
+ <title>IUT Lens</title>
+ <link rel="icon" type="image/png" href="images/logo_URL.gif"/> <!--Icone dans la barre du navigateur-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ 
+<body>
+<!--MENU-->
+<nav>
+	<ul id="menu">
+		<li><a class="boutonVert" href="index.htm">Acceuil</a></li>
+		<li><a class="boutonRouge" href="statistiques.html" >Statistiques</a></li>
+		<li><a class="boutonOrange" href="questionnaireIntro.htm" >Questionnaire</a></li>
+		<li><a class="boutonJaune" href="Temoignage.html" >T&eacute;moignage</a></li>
+		<li><a class="boutonCV" href="CV.html" >Tuto CV</a></li>
+		<li><a class="boutonMauve" href="contact.html" >Contact</a></li>
+		<li><img id="logo-iut" src="images/logo_Iut.JPG"  alt="page d'accueil du site de l'iut de Lens"> </li>
+		<li><a href="CVA.html" class="anglais" id="boutonAnglais"></a></li>
+		<li><a href="CV.html" class="francais" id="boutonFrancais"></a></li>
+		<li><a href="https://www.facebook.com/IUT.DE.LENS/?fref=ts" class="facebook" id="boutonFacebook"></a></li>
+		<li><a href="https://twitter.com/IUT_lens" class="twitter" id="boutonTwitter"></a></li>
+		<li><a href="https://www.instagram.com/explore/locations/322245/" class="instagram" id="boutonInstagram"></a></li>
+		<li><a href="https://www.youtube.com/user/servicecomiut" class="youtube" id="boutonYoutube"></a></li>
+	</ul>
+</nav>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+
+<form method="post"> 
+<fieldset>
+	<legend id="questionNumero">Question 11</legend> 			
+<br>	
+			<div id="questionPosee">Que signifie LMD ? </div><br>
+			<div id="questionAide">Choisissez la bonne réponse:</div><br>
+			<input type="checkbox" name="box" value ="cours" />Langues Mathématiques Droit	<br>
+			<input type="checkbox" name="test[]" value ="cours" />Loisirs Musique Distraction	<br>
+			<input type="checkbox" name="test[]" value ="cours" />Licence Master Doctorat<br>
+			<input type="checkbox" name="test[]" value ="cours" />Licence Master Diplôme<br>
+			</fieldset>
+</form>
+<div id="flip"><input type="button" value="Reponse"></div>
+<div id="panel"><h3>La réponse est :</h3>
+
+<div class="reponse-vrai">
+☑		Licence Master Doctorat
+
+</div><br>
+
+<div class="texte">
+Le cursus universitaire appelé LMD s’étend sur 8 années d’études après le bac, il est sanctionné par trois diplômes nationaux.<br>
+Les trois premières années d’études préparent à la licence (diplôme de niveau bac+3), les deux suivantes au Master (diplôme de niveau bac +5), les trois dernières au Doctorat (diplôme de bac+8).
+<br></div>
+
+<div class="texte">
+D’autres sigles sont utilisés à l’Université :<br>
+
+UFR : Unité de Formation et de Recherche, ce que l’on appelle également des « composantes » de l’université. Ce sont les structures où sont organisés les enseignements et la recherche des laboratoires associés à l’université. <br>
+
+UE : Unité d’Enseignement. À l’université, les cours sont séparés en UE correspondant à un découpage par matière.<br> 
+
+ECTS : European Credit Transfer System, ou « Système européen de transfert et d’accumulation de crédits ». À chaque UE correspond un nombre de « crédits », donnant le poids de l’enseignement dans le diplôme. Il  a pour but de faciliter la reconnaissance des études à l’étranger et donc de favoriser la mobilité étudiante. <br>
+
+CLES : Certificat de compétences en Langues de l'Enseignement Supérieur. Il permet aux étudiants d'attester de leur niveau de compétence en langues, notamment à l'occasion d'une mobilité, auprès d'un employeur ou lors de l'inscription à un concours de recrutement. C'est une certification nationale, proposée aux étudiants spécialistes d'autres disciplines que les langues, gratuite et échelonnée selon trois niveaux correspondant au Cadre Européen Commun de Référence pour les Langues (CECRL). À l'Université d'Artois, quatre langues sont proposées à la certification (Anglais, Allemand, Espagnol et Italien)<br>
+
+C2I : Certificat Informatique et Internet. Il est proposé tout au long de la vie avec le niveau 1 généraliste, et le niveau 2 spécifique à certaines filières proposées à l'Université d'Artois : enseignement, droit, ingénierie, environnement et aménagement, organisation et communication.<br>
+
+STAPS : Sciences et Techniques des Activités Physiques et Sportives (enseignées à Liévin)<br>
+
+BU : Bibliothèque Universitaire <a href="http://portail-bu.univ-artois.fr/medias/medias.aspx?INSTANCE=EXPLOITATION">(site de la BU de l’Université d’Artois)</a><br>
+
+RU : Restaurant Universitaire<br>
+
+DUT : Diplôme Universitaire de Technologie<br>
+
+DEUST : Diplôme d’Études Universitaires Scientifiques et Techniques<br>
+
+IUT : Institut Universitaire de Technologie<br>
+</div>
+
+<form action="./question10.htm">
+    <input type="submit" value="Precedent"/>
+</form> 
+
+<form action="./question12.htm">
+    <input type="submit" value="Suivant"/>
+    
+</form> 
+</div>
+</body>
+</html>
+
+
+

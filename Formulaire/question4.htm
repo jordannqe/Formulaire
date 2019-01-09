@@ -1,0 +1,117 @@
+ <!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="questionnaire.css">
+ <title>IUT Lens</title>
+ <link rel="icon" type="image/png" href="images/logo_URL.gif"/> <!--Icone dans la barre du navigateur-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ 
+<body>
+<!--MENU-->
+<nav>
+	<ul id="menu">
+		<li><a class="boutonVert" href="index.htm">Acceuil</a></li>
+		<li><a class="boutonRouge" href="statistiques.html" >Statistiques</a></li>
+		<li><a class="boutonOrange" href="questionnaireIntro.htm" >Questionnaire</a></li>
+		<li><a class="boutonJaune" href="Temoignage.html" >T&eacute;moignage</a></li>
+		<li><a class="boutonCV" href="CV.html" >Tuto CV</a></li>
+		<li><a class="boutonMauve" href="contact.html" >Contact</a></li>
+		<li><img id="logo-iut" src="images/logo_Iut.JPG"  alt="page d'accueil du site de l'iut de Lens"> </li>
+		<li><a href="CVA.html" class="anglais" id="boutonAnglais"></a></li>
+		<li><a href="CV.html" class="francais" id="boutonFrancais"></a></li>
+		<li><a href="https://www.facebook.com/IUT.DE.LENS/?fref=ts" class="facebook" id="boutonFacebook"></a></li>
+		<li><a href="https://twitter.com/IUT_lens" class="twitter" id="boutonTwitter"></a></li>
+		<li><a href="https://www.instagram.com/explore/locations/322245/" class="instagram" id="boutonInstagram"></a></li>
+		<li><a href="https://www.youtube.com/user/servicecomiut" class="youtube" id="boutonYoutube"></a></li>
+	</ul>
+</nav>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+
+<form method="post"> 
+<fieldset>
+	<legend id="questionNumero">Question 4</legend> 			
+	<div><br>	
+			<div id="questionPosee">En étant étudiant, je peux :</div><br>
+			<div id="questionAide">Choisissez la/les bonnes réponse(s) :</div><br>
+			<input type="checkbox" name="box" value ="cours" />Le Droit	<br>
+			<input type="checkbox" name="test[]" value ="cours" />Les Arts et les Lettres<br>
+			<input type="checkbox" name="test[]" value ="cours" />Les STAPS (Sciences et Techniques des Activités Physiques et Sportives)<br>
+			<input type="checkbox" name="test[]" value ="cours" />Les Langues<br>
+			<input type="checkbox" name="test[]" value ="cours" />La Médecine<br>
+			<input type="checkbox" name="test[]" value ="cours" />Les Sciences économiques et sociales<br>
+			<input type="checkbox" name="test[]" value ="cours" />Les Sciences et Sciences pour l’Ingénieur<br>
+			<input type="checkbox" name="test[]" value ="cours" />La Psychologie<br>
+			</div>
+			</fieldset>
+</form>
+<div id="flip"><input type="button" value="Reponse"></div>
+<div id="panel"><h3>Les réponses sont :</h3>
+
+<div class="reponse-vrai">
+☑		Le Droit<br>
+☑		Les Arts et les Lettres<br>
+☑		Les STAPS (Sciences et Techniques des 
+Activités Physiques et Sportives)<br>
+☑		Les Langues<br>
+☑		Les Sciences économiques et sociales<br>
+☑		Les Sciences et Sciences pour l’Ingénieur<br>
+</div>
+
+<br>
+<img src="images/carte.jpg" alt="carte" style="width:524px;height:428px;">
+<div class="texte">
+Pluridisciplinaire, l’Université d’Artois propose un large choix de 
+formations allant de bac + 2 à bac + 8 dans les domaines suivants :<br>
+- Arts, Lettres, Langues <br>
+- Droit  <br>
+- Sciences humaines et Sociales <br>
+- Histoire, Géographie et aménagement <br>
+- Sciences et Techniques des Activités Physiques et Sportives <br>
+- Economie, Gestion <br>
+- Sciences, Technologies, Santé <br>
+- Sciences pour l’ingénieur <br>
+</div>
+
+Arras :<a href="http://www.univ-artois.fr/L-universite/UFR-et-IUT">lien</a> <br>
+
+FSA : <a href="http://www.univ-artois.fr/L-universite/UFR-et-IUT/Sciences-Appliquees/Presentation">lien</a> <br>
+
+STAPS : <a href="http://www.univ-artois.fr/L-universite/UFR-et-IUT/STAPS">lien</a> <br>
+
+Droit:<a href=" http://www.univ-artois.fr/L-universite/UFR-et-IUT/Droit">lien</a> <br>
+
+Faculté J. Perrin :<a href="http://www.univ-artois.fr/L-universite/UFR-et-IUT/Sciences">lien</a> <br>
+
+IUT de Béthune :<a href="http://www.iutbethune.org/">lien</a> <br>
+
+IUT de Lens :<a href="http://www.iut-lens.univ-artois.fr/">lien</a> <br>
+
+<br/><br/><br/><br/>
+<form action="./question3.htm">
+    <input type="submit" value="Precedent"/>
+</form> 
+
+<form action="./question5.htm">
+    <input type="submit" value="Suivant"/>
+</form> 
+</div>
+
+
+<br>
+
+
+</body>
+</html>
+
+
+

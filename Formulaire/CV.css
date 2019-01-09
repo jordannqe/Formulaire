@@ -1,0 +1,286 @@
+/*LE CORPS*/
+body	{
+	background-image:url("images/background.jpg");
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family:Quadrat;
+}
+
+@font-face {
+    font-family: "Quadrat";
+    src: url('QuadraatSansRegular.ttf');
+}
+
+
+
+
+
+/*LE MENU*/
+ul {
+    margin: 40px 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: white;
+	opacity: 0.7;
+}
+#menu {
+    list-style-type: none;
+	border-radius:20px;
+}
+ li a {
+	float:left;
+    display:block;
+    color: black;
+    text-align: center;
+    padding: 40px 30px;
+    text-decoration: none;
+	font-size:18px;
+	font-weight: bold;
+	transition:0.5s;
+}
+
+li a:hover {
+    background-color: #FFA500;
+	transition:0.5s;
+	box-shadow: 10px 0px 0px #FFA500;
+	color:white;
+}
+
+
+
+
+
+/*LES COULEURS DES BOUTONS REDIRECTION DU MENU*/
+.boutonCV {
+    background-color: orange;
+}
+
+.boutonVert:hover {
+	background-color: #4CAF50;
+	transition:0.4s;
+	box-shadow: 20px 0px 0px #4CAF50;
+}
+
+.boutonRouge:hover {
+	background-color: red;
+	transition:0.4s;
+	box-shadow: 20px 0px 0px red;
+}
+
+.boutonOrange:hover {
+	background-color: orange;
+	transition:0.4s;
+	box-shadow: 20px 0px 0px orange;
+}
+
+.boutonJaune:hover {
+	background-color: yellow;
+	transition:0.4s;
+	box-shadow: 20px 0px 0px yellow;
+}
+
+.boutonMauve:hover {
+	background-color: purple;
+	transition:0.4s;
+	box-shadow: 20px 0px 0px purple;
+}
+
+
+
+
+
+/*LES LOGOS*/
+#logo-iut{
+	float:right;
+	margin-right:20px;
+	width:75px;
+}
+
+
+
+
+
+
+/*LES CLASSES POUR AFFICHER LES BOUTONS DANS LE MENU*/
+.anglais {
+    background-image:url("images/drapeau_Angleterre.png");
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+	margin-left: 2px;
+	margin-right: 30px;
+    cursor: pointer;
+}
+
+.francais {
+    background-image:url("images/drapeau_France.png");
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.facebook {
+    background-image:url("images/icone_Facebook.png");
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+	margin-left: 2px;
+	margin-right: 20px;
+    cursor: pointer;
+}
+
+.twitter {
+    background-image:url("images/icone_Twitter.png");
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.instagram {
+    background-image:url("images/icone_Instagram.jpg");
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.youtube {
+    background-image:url("images/icone_Youtube.png");
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*LES ID POUR AFFICHER LES OMBRES DES BOUTONS*/
+#boutonAnglais {
+	float:right;
+	margin-top:30px
+}
+
+#boutonAnglais:hover {
+	background-color: #111;
+	transition:0.4s;
+	box-shadow: 0px -15px 0px #4169E1;
+}
+
+#boutonFrancais {
+	float:right;
+	margin-top:30px
+}
+
+#boutonFrancais:hover {
+	background-color: #111;
+	transition:0.4s;
+	box-shadow: 0px -15px 0px #4169E1;
+}
+
+#boutonFacebook {
+	float:right;
+	margin-top:30px
+}
+
+#boutonFacebook:hover {
+	background-color: #111;
+	transition:0.4s;
+	box-shadow: 0px -15px 0px #4169E1;
+}
+
+#boutonTwitter {
+	float:right;
+	margin-top:30px
+}
+
+#boutonTwitter:hover {
+	background-color: #111;
+	transition:0.4s;
+	box-shadow: 0px -15px 0px #4169E1;
+}
+
+#boutonInstagram {
+	float:right;
+	margin-top:30px
+}
+
+#boutonInstagram:hover {
+	background-color: #111;
+	transition:0.4s;
+	box-shadow: 0px -15px 0px #4169E1;
+}
+
+#boutonYoutube {
+	float:right;
+	margin-top:30px
+}
+
+#boutonYoutube:hover {
+	background-color: #111;
+	transition:0.4s;
+	box-shadow: 0px -15px 0px #4169E1;
+}
+
+.zone {
+	border:1px solid black;
+	height:100%;
+	background-color:white;
+	padding:2%;
+	border-radius:20px;
+	background-color:#E0ECF8;
+	margin: 5% 10%;
+}
+
+
+.liste{
+	background-color:#E0ECF8;
+	margin-left:5%;
+	padding-top:1%;
+	font-size:110%;
+}
+
+h2 {
+	text-align:center;
+	border:1px solid black;
+	padding:10px;
+	background-color:orange;
+	border-radius:20px;
+}
+h3{
+	margin:5%;
+	font-size:130%;
+	text-align:center;
+}
+
+.point{
+	background-color:#E0ECF8;
+}
+
+#banniere {
+	width:100%;
+	border-radius:20px;
+	height:10%;
+}

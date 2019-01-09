@@ -1,0 +1,108 @@
+ <!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="questionnaire.css">
+ <title>IUT Lens</title>
+ <link rel="icon" type="image/png" href="images/logo_URL.gif"/> <!--Icone dans la barre du navigateur-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ 
+<body>
+<!--MENU-->
+<nav>
+	<ul id="menu">
+		<li><a class="boutonVert" href="index.htm">Acceuil</a></li>
+		<li><a class="boutonRouge" href="statistiques.html" >Statistiques</a></li>
+		<li><a class="boutonOrange" href="questionnaireIntro.htm" >Questionnaire</a></li>
+		<li><a class="boutonJaune" href="Temoignage.html" >T&eacute;moignage</a></li>
+		<li><a class="boutonCV" href="CV.html" >Tuto CV</a></li>
+		<li><a class="boutonMauve" href="contact.html" >Contact</a></li>
+		<li><img id="logo-iut" src="images/logo_Iut.JPG"  alt="page d'accueil du site de l'iut de Lens"> </li>
+		<li><a href="CVA.html" class="anglais" id="boutonAnglais"></a></li>
+		<li><a href="CV.html" class="francais" id="boutonFrancais"></a></li>
+		<li><a href="https://www.facebook.com/IUT.DE.LENS/?fref=ts" class="facebook" id="boutonFacebook"></a></li>
+		<li><a href="https://twitter.com/IUT_lens" class="twitter" id="boutonTwitter"></a></li>
+		<li><a href="https://www.instagram.com/explore/locations/322245/" class="instagram" id="boutonInstagram"></a></li>
+		<li><a href="https://www.youtube.com/user/servicecomiut" class="youtube" id="boutonYoutube"></a></li>
+	</ul>
+</nav>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+
+<form method="post"> 
+<fieldset>
+	<legend id="questionNumero">Question 5</legend> 			
+<br>	
+			<div id="questionPosee">Si je veux m’inscrire à l’université, je dois obligatoirement enregistrer mes vœux sur APB :</div><br>
+			<div id="questionAide">Choisissez la bonne réponse:</div><br>
+			<input type="radio" name="CSS" value="oui" id="oui" checked="checked" />
+     <label for="oui" class="inline">oui</label>
+     <input type="radio" name="CSS" value="non" id="non" />
+     <label for="non" class="inline">non</label>
+			</fieldset>
+</form>
+<div id="flip"><input type="button" value="Reponse"></div>
+<div id="panel"><h3>La réponse est :</h3>
+
+<div class="reponse-vrai">
+☑		VRAI
+</div>
+
+<div class="texte">
+Vous devez suivre la procédure Admission Post Bac (APB) en ligne : <a href="https://www.admission-postbac.fr">Admission post bac</a></div>
+
+<div class="texte">
+L’ensemble de la procédure APB doit être suivi en ligne, en respectant les différentes étapes et le calendrier.
+Attention, certains parcours sont sélectifs et requièrent des pièces spécifiques pour le dossier de candidature.</div>
+
+
+Inscription du 20 janvier au 20 mars.<br>
+APB c’est quoi ?<br>
+
+<div class="texte">
+Cette plateforme a été mise en place pour simplifier les démarches de pré-inscription dans l’enseignement supérieur en regroupant sur un seul site l'ensemble des formations post-baccalauréat. A partir de cette adresse, vous pouvez :<br>
+
+- Accéder à des informations sur les formations qui participent à la procédure<br>
+- Rechercher les formations qui vous intéressent<br>
+- Vous renseigner sur les établissements (liens avec leur site)<br>
+- Emettre des vœux de poursuite d'études<br>
+- Suivre votre dossier<br></div>
+
+<div class="texte">
+</div>
+
+Quatre grandes étapes :
+1. votre inscription Internet<br>
+2. la constitution et l'envoi de vos dossiers « papier » de candidature le cas échéant<br>
+3. les phases d'admission<br>
+4. l'inscription administrative dans l'établissement<br>
+
+
+
+<form action="./question4.htm">
+    <input type="submit" value="Precedent"/>
+</form> 
+
+<form action="./question6.htm">
+    <input type="submit" value="Suivant"/>
+    
+</form> 
+</div>
+
+
+<br>
+
+
+</body>
+</html>
+
+
+

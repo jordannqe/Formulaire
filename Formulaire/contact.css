@@ -1,0 +1,358 @@
+/*LE CORPS*/
+body	{
+	background-color:#E0ECF8;
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	font-family:Quadrat;
+}
+
+@font-face {
+    font-family: "Quadrat";
+    src: url('QuadraatSansRegular.ttf');
+}
+
+
+
+/*LE MENU*/
+ul {
+    list-style-type: none;
+    margin: 40px 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: white;
+	opacity: 0.7;
+}
+
+#menu{
+	border-radius:20px;
+}
+
+li a {
+	float:left;
+    display:block;
+    color: black;
+    text-align: center;
+    padding: 40px 30px;
+    text-decoration: none;
+	font-size:18px;
+	font-weight: bold;
+	transition:0.5s;	
+}
+
+li a:hover {
+    background-color: #FFA500;
+	transition:0.5s;
+	box-shadow: 10px 0px 0px #FFA500;
+	color: white;
+}
+
+
+
+
+
+/*LES COULEURS DES BOUTONS REDIRECTION DU MENU*/
+.boutonVert:hover {
+	background-color: #4CAF50;
+	transition:0.4s;
+	box-shadow: 20px 0px 0px #4CAF50;
+}
+
+.boutonRouge:hover {
+	background-color: red;
+	transition:0.4s;
+	box-shadow: 20px 0px 0px red;
+}
+
+.boutonOrange:hover {
+	background-color: orange;
+	transition:0.4s;
+	box-shadow: 20px 0px 0px orange;
+}
+
+.boutonJaune:hover {
+	background-color: yellow;
+	transition:0.4s;
+	box-shadow: 20px 0px 0px yellow;
+}
+
+.boutonMauve {
+    background-color: purple;
+}
+
+.boutonMauve:hover {
+	background-color: purple;
+	transition:0.4s;
+	box-shadow: 20px 0px 0px purple;
+}
+
+
+
+
+
+/*LES LOGOS*/
+#logo-iut{
+	float:right;
+	margin-right:20px;
+	width:75px;
+}
+
+#logo-univ {
+		margin-top:150px;
+		margin-left:50px;
+		width:350px;
+		padding:10px;
+}
+
+
+
+
+
+/*LES CLASSES POUR AFFICHER LES BOUTONS DANS LE MENU*/
+.anglais {
+    background-image:url("images/drapeau_Angleterre.png");
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+	margin-left: 2px;
+	margin-right: 30px;
+    cursor: pointer;
+}
+
+.francais {
+    background-image:url("images/drapeau_France.png");
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.facebook {
+    background-image:url("images/icone_Facebook.png");
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+	margin-left: 2px;
+	margin-right: 20px;
+    cursor: pointer;
+}
+
+.twitter {
+    background-image:url("images/icone_Twitter.png");
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.instagram {
+    background-image:url("images/icone_Instagram.jpg");
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.youtube {
+    background-image:url("images/icone_Youtube.png");
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*LES ID POUR AFFICHER LES OMBRES DES BOUTONS*/
+#boutonAnglais {
+	float:right;
+	margin-top:30px
+}
+
+#boutonAnglais:hover {
+	background-color: #111;
+	transition:0.4s;
+	box-shadow: 0px -15px 0px #4169E1;
+}
+
+#boutonFrancais {
+	float:right;
+	margin-top:30px
+}
+
+#boutonFrancais:hover {
+	background-color: #111;
+	transition:0.4s;
+	box-shadow: 0px -15px 0px #4169E1;
+}
+
+#boutonFacebook {
+	float:right;
+	margin-top:30px
+}
+
+#boutonFacebook:hover {
+	background-color: #111;
+	transition:0.4s;
+	box-shadow: 0px -15px 0px #4169E1;
+}
+
+#boutonTwitter {
+	float:right;
+	margin-top:30px
+}
+
+#boutonTwitter:hover {
+	background-color: #111;
+	transition:0.4s;
+	box-shadow: 0px -15px 0px #4169E1;
+}
+
+#boutonInstagram {
+	float:right;
+	margin-top:30px
+}
+
+#boutonInstagram:hover {
+	background-color: #111;
+	transition:0.4s;
+	box-shadow: 0px -15px 0px #4169E1;
+}
+
+#boutonYoutube {
+	float:right;
+	margin-top:30px
+}
+
+#boutonYoutube:hover {
+	background-color: #111;
+	transition:0.4s;
+	box-shadow: 0px -15px 0px #4169E1;
+}
+
+
+
+
+/*----------------------------*/
+/*ICI COMMENCE LA PAGE CONTACT*/
+/*----------------------------*/
+
+/*Classe pour les avatars*/
+.avatar_John {
+	background-color: #E0ECF8;
+	border-color: #E0ECF8;
+	border-style:solid;
+	border-width: 0px;
+	border-radius: 80px;
+}
+
+#avatar_Maxime {
+	background-color: #E0ECF8;
+	border-color: #E0ECF8;
+	border-style:solid;
+	border-width: 0px;
+	border-radius: 80px;
+}
+
+#avatar_Jordan {
+	background-color: #E0ECF8;
+	border-color: #E0ECF8;
+	border-style:solid;
+	border-width: 0px;
+	border-radius: 80px;
+}
+
+
+
+
+
+
+
+
+/*TEXT DESCRIPTIF DES MEMBRES*/
+.descriptif_Membre {
+	opacity:0.6;
+	background-color: #E0ECF8;
+	font-size:100%;
+	padding:1%;
+	border-radius:20px;
+}
+
+.descriptif_Membre:hover{
+	opacity:1;
+	font-weight:bold;
+}
+
+
+/*message de bienvenue*/
+#barre1 {
+	margin-top:8%;
+	margin-bottom:20%;
+	margin-left:12%;
+	margin-right:12%;
+	height:300px;
+	border-radius:5px;
+	text-align:justify;
+	font-size:22px;
+	font-style:italic;
+	padding:10px 15px;
+}
+
+#pouce {
+	float:left;
+	width:25%;
+	margin-top:40px;
+	margin-left:40px;
+}
+
+
+#lol {
+	padding:10px;
+	font-size:120%;
+	margin-top:12%;
+}
+
+.barre {
+	margin-top:10%;
+	margin-bottom:12%;
+	margin-left:12%;
+	margin-right:12%;
+	height:50px;
+	background-color:#9932CC;
+	border-radius:20px;
+	text-align:center;
+}
+
+.table{
+	border:0;
+	width:80%;
+	text-align:justify;
+	padding:2%;
+	margin:auto;
+	background-color:#E0ECF8;
+}
+
+.liste {
+	border-radius:20px;
+	padding:2%;
+}

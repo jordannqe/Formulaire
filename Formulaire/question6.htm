@@ -1,0 +1,109 @@
+ <!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="questionnaire.css">
+ <title>IUT Lens</title>
+ <link rel="icon" type="image/png" href="images/logo_URL.gif"/> <!--Icone dans la barre du navigateur-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ 
+<body>
+<!--MENU-->
+<nav>
+	<ul id="menu">
+		<li><a class="boutonVert" href="index.htm">Acceuil</a></li>
+		<li><a class="boutonRouge" href="statistiques.html" >Statistiques</a></li>
+		<li><a class="boutonOrange" href="questionnaireIntro.htm" >Questionnaire</a></li>
+		<li><a class="boutonJaune" href="Temoignage.html" >T&eacute;moignage</a></li>
+		<li><a class="boutonCV" href="CV.html" >Tuto CV</a></li>
+		<li><a class="boutonMauve" href="contact.html" >Contact</a></li>
+		<li><img id="logo-iut" src="images/logo_Iut.JPG"  alt="page d'accueil du site de l'iut de Lens"> </li>
+		<li><a href="CVA.html" class="anglais" id="boutonAnglais"></a></li>
+		<li><a href="CV.html" class="francais" id="boutonFrancais"></a></li>
+		<li><a href="https://www.facebook.com/IUT.DE.LENS/?fref=ts" class="facebook" id="boutonFacebook"></a></li>
+		<li><a href="https://twitter.com/IUT_lens" class="twitter" id="boutonTwitter"></a></li>
+		<li><a href="https://www.instagram.com/explore/locations/322245/" class="instagram" id="boutonInstagram"></a></li>
+		<li><a href="https://www.youtube.com/user/servicecomiut" class="youtube" id="boutonYoutube"></a></li>
+	</ul>
+</nav>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+
+<form method="post"> 
+<fieldset>
+	<legend id="questionNumero">Question 6</legend> 			
+<br>	
+			<div id="questionPosee">À l’Université d’Artois, je peux préparer :</div><br>
+			<div id="questionAide">Choisissez la bonne réponse:</div><br>
+			<input type="checkbox" name="box" value ="cours" />Un DUT	<br>
+			<input type="checkbox" name="test[]" value ="cours" />Un BTS<br>
+			<input type="checkbox" name="test[]" value ="cours" />Un DEUST<br>
+			<input type="checkbox" name="test[]" value ="cours" />Une Licence<br>
+			<input type="checkbox" name="test[]" value ="cours" />Une Licence Professionnelle<br>
+			<input type="checkbox" name="test[]" value ="cours" />Un Master<br>
+			<input type="checkbox" name="test[]" value ="cours" />Un Doctorat<br>
+			</fieldset>
+</form>
+<div id="flip"><input type="button" value="Reponse"></div>
+<div id="panel"><h3>La réponse est :</h3>
+
+<div class="reponse-vrai">
+☑		Un DUT
+☑		Un DEUST
+☑		Une Licence
+☑		Une Licence Professionnelle
+☑		Un Master
+☑		Un Doctorat
+</div><br>
+
+<img src="images/etude.jpg" alt="etude">
+Après le Bac, à l’université, je peux :<br>
+- choisir des études professionnalisées en 2 ans (DUT ou DEUST)<br>
+- choisir des études plus générales en 3 ans (Licence) <br>
+
+<div class="texte">
+Je pourrai ensuite, selon mon projet, poursuivre mes études vers une Licence Professionnelle, un Master 
+ou un Doctorat.</div>
+
+<div class="texte">
+L'Université d'Artois propose plus de 150 formations de bac + 1 à bac + 8, organisées selon le schéma européen LMD Licence Master Doctorat.<br>
+Les BTS, quant à eux, sont dispensés dans les lycées. <br>
+
+<div class="texte">
+Vous pouvez retrouver toutes les formations proposées à l’université d’Artois 
+en consultant notre catalogue des formations  ou en cliquant directement sur un domaine de formation<br>
+</div>
+
+Sciences, Technologies, Santé (70) (en savoir plus)<br>
+Arts, Lettres, Langues (27) (en savoir plus)<br>
+Droit, Economie, Gestion (37) (en savoir plus)<br>
+Sciences Humaines et Sociales (17) (en savoir plus)<br>
+</div>
+
+<form action="./question5.htm">
+    <input type="submit" value="Precedent"/>
+</form> 
+
+<form action="./question7.htm">
+    <input type="submit" value="Suivant"/>
+    
+</form> 
+</div>
+
+
+<br>
+
+
+</body>
+</html>
+
+
+

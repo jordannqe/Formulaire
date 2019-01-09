@@ -1,0 +1,89 @@
+ <!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="questionnaire.css">
+ <title>IUT Lens</title>
+ <link rel="icon" type="image/png" href="images/logo_URL.gif"/> <!--Icone dans la barre du navigateur-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ 
+<body>
+<!--MENU-->
+<nav>
+	<ul id="menu">
+		<li><a class="boutonVert" href="index.htm">Acceuil</a></li>
+		<li><a class="boutonRouge" href="statistiques.html" >Statistiques</a></li>
+		<li><a class="boutonOrange" href="questionnaireIntro.htm" >Questionnaire</a></li>
+		<li><a class="boutonJaune" href="Temoignage.html" >T&eacute;moignage</a></li>
+		<li><a class="boutonCV" href="CV.html" >Tuto CV</a></li>
+		<li><a class="boutonMauve" href="contact.html" >Contact</a></li>
+		<li><img id="logo-iut" src="images/logo_Iut.JPG"  alt="page d'accueil du site de l'iut de Lens"> </li>
+		<li><a href="CVA.html" class="anglais" id="boutonAnglais"></a></li>
+		<li><a href="CV.html" class="francais" id="boutonFrancais"></a></li>
+		<li><a href="https://www.facebook.com/IUT.DE.LENS/?fref=ts" class="facebook" id="boutonFacebook"></a></li>
+		<li><a href="https://twitter.com/IUT_lens" class="twitter" id="boutonTwitter"></a></li>
+		<li><a href="https://www.instagram.com/explore/locations/322245/" class="instagram" id="boutonInstagram"></a></li>
+		<li><a href="https://www.youtube.com/user/servicecomiut" class="youtube" id="boutonYoutube"></a></li>
+	</ul>
+</nav>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+
+<form method="post"> 
+<fieldset>
+	<legend id="questionNumero">Question 10</legend> 			
+<br>	
+			<div id="questionPosee">Pour construire mon parcours et préparer mon insertion dans le monde professionnel, je peux :</div><br>
+			<div id="questionAide">Choisissez la bonne réponse:</div><br>
+			<input type="checkbox" name="box" value ="cours" />Bénéficier de l’accompagnement d’un service dédié		<br>
+			<input type="checkbox" name="test[]" value ="cours" />Bénéficier du réseau de partenariat université-entreprises	<br>
+			<input type="checkbox" name="test[]" value ="cours" />Assister aux rencontres avec des professionnels et des anciens étudiants organisées par l’Université<br>
+			<input type="checkbox" name="test[]" value ="cours" />M’inscrire sur le Career Center de l’Université d’Artois<br>
+			<input type="checkbox" name="test[]" value ="cours" />Réaliser un ou plusieurs stages au cours de mon cursus<br>
+			</fieldset>
+</form>
+<div id="flip"><input type="button" value="Reponse"></div>
+<div id="panel"><h3>La réponse est :</h3>
+
+<div class="reponse-vrai">
+☑		Bénéficier de l’accompagnement d’un service dédié<br/>
+☑		Bénéficier du réseau de partenariat université-entreprises<br/>
+☑		Assister aux rencontres avec des professionnels et des anciens étudiants organisées par l’Université
+☑		M’inscrire sur le Career Center de l’Université d’Artois<br/>
+☑		Réaliser un ou plusieurs stages au cours de mon cursus<br/>
+</div><br>
+
+<div class="texte">
+Pour vous aider à définir votre projet personnel et professionnel, vous guider dans votre recherche de stages, et vous accompagner dans la préparation de votre insertion professionnelle, vous pourrez bénéficier de l’aide des conseillères du Service d’Accueil, d’Orientation et d’Insertion Professionnelle (SAOIP).(Découvrez le SAOIP en vidéo)<br>
+Chaque année, le SAOIP met en place trois rendez-vous sur le thème de l’insertion professionnelle dans trois secteurs d’activités différents vous permettant de rencontrer des professionnels et des anciens étudiants. La Semaine de l’Insertion Professionnelle favorise les rencontres avec les entreprises et les employeurs autour de conférences, échanges, ateliers, témoignages, forums… 
+<br></div>
+
+<div class="texte">
+En vous inscrivant sur le Career Center by JobTeaser, la plateforme carrière destinée aux étudiants et aux jeunes diplômés, vous aurez accès à des fiches d’entreprises partenaires de l’université, leurs offres de stages et d’emplois, les évènements qu’elles organisent…</div>
+
+<div class="texte">
+Pour obtenir des données sur l’insertion professionnelle de nos jeunes diplômés, n’hésitez pas à consulter les résultats des enquêtes réalisées par l’Observatoire de la Vie Étudiante (OVE).
+<br></div>
+
+<form action="./question9.htm">
+    <input type="submit" value="Precedent"/>
+</form> 
+
+<form action="./question11.htm">
+    <input type="submit" value="Suivant"/>
+    
+</form> 
+</div>
+</body>
+</html>
+
+
+

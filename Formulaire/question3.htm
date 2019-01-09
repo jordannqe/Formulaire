@@ -1,0 +1,93 @@
+ <!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="questionnaire.css">
+ <title>IUT Lens</title>
+ <link rel="icon" type="image/png" href="images/logo_URL.gif"/> <!--Icone dans la barre du navigateur-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ 
+<body>
+<!--MENU-->
+<nav>
+	<ul id="menu">
+		<li><a class="boutonVert" href="index.htm">Acceuil</a></li>
+		<li><a class="boutonRouge" href="statistiques.html" >Statistiques</a></li>
+		<li><a class="boutonOrange" href="questionnaireIntro.htm" >Questionnaire</a></li>
+		<li><a class="boutonJaune" href="Temoignage.html" >T&eacute;moignage</a></li>
+		<li><a class="boutonCV" href="CV.html" >Tuto CV</a></li>
+		<li><a class="boutonMauve" href="contact.html" >Contact</a></li>
+		<li><img id="logo-iut" src="images/logo_Iut.JPG"  alt="page d'accueil du site de l'iut de Lens"> </li>
+		<li><a href="CVA.html" class="anglais" id="boutonAnglais"></a></li>
+		<li><a href="CV.html" class="francais" id="boutonFrancais"></a></li>
+		<li><a href="https://www.facebook.com/IUT.DE.LENS/?fref=ts" class="facebook" id="boutonFacebook"></a></li>
+		<li><a href="https://twitter.com/IUT_lens" class="twitter" id="boutonTwitter"></a></li>
+		<li><a href="https://www.instagram.com/explore/locations/322245/" class="instagram" id="boutonInstagram"></a></li>
+		<li><a href="https://www.youtube.com/user/servicecomiut" class="youtube" id="boutonYoutube"></a></li>
+	</ul>
+</nav>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+
+<form method="post"> 
+<fieldset>
+	<legend id="questionNumero">Question 3</legend> 			
+	<div><br>	
+			<div id="questionPosee">En étant étudiant, je peux :</div><br>
+			<div id="questionAide">Choisissez la/les bonnes réponse(s) :</div><br>
+			<input type="checkbox" name="box" value ="cours" />Déjeuner au Restaurant Universitaire<br>
+			<input type="checkbox" name="test[]" value ="cours" />Bénéficier d’un logement<br>
+			<input type="checkbox" name="test[]" value ="cours" />Postuler à une bourse de l’enseignement supérieur<br>
+			</div>
+			</fieldset>
+</form>
+<div id="flip"><input type="button" value="Reponse"></div>
+<div id="panel"><h3>Les réponses sont :</h3>
+
+<div class="reponse-vrai">
+☑		Déjeuner au Restaurant Universitaire
+☑		Bénéficier d’un logement<br>
+☑		Postuler à une bourse de l’enseignement supérieur<br>
+</div>
+
+<br>
+
+<div class="texte">
+Le Centre Régional des Œuvres Universitaires et Sociales (CROUS) déploie sur les campus de nombreux services de restauration, le midi (et le soir sur certains campus), comprenant plusieurs cafétérias et restaurants universitaires proches des lieux d’enseignements.</div>
+
+<div class="texte">
+Le CROUS dispose de logements dans des résidences universitaires et propose également des logements en ville. Les demandes de logement en résidence universitaire se font auprès du CROUS. (Renseignements possibles dans les différentes antennes du CROUS et réservation sur le site internet).</div>
+
+<div class="texte">
+Une bourse sur critères sociaux est accordée à l’étudiant confronté à des difficultés matérielles ne lui permettant pas d’entreprendre ou de poursuivre des études supérieures. Elle constitue une aide complémentaire à celle de la famille.
+Pour une première demande, l’étudiant doit être âgé de moins de 28 ans au 1er octobre de l’année de la rentrée universitaire.</div>
+
+<div class="texte">
+Il doit pour cela constituer un Dossier Social Etudiant en ligne entre le 15 janvier et le 31 mai précédant la rentrée universitaire. Ce dossier lui permet également de demander un logement en résidence universitaire.</div>
+
+<form action="./question2.htm">
+    <input type="submit" value="Precedent"/>
+</form> 
+
+<form action="./question4.htm">
+    <input type="submit" value="Suivant"/>
+</form> 
+</div>
+
+
+<br>
+
+
+</body>
+</html>
+
+
+

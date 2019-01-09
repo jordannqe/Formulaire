@@ -1,0 +1,110 @@
+ <!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="questionnaire.css">
+ <title>IUT Lens</title>
+ <link rel="icon" type="image/png" href="images/logo_URL.gif"/> <!--Icone dans la barre du navigateur-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ </head>
+ 
+<body>
+<!--MENU-->
+<nav>
+	<ul id="menu">
+		<li><a class="boutonVert" href="index.htm">Acceuil</a></li>
+		<li><a class="boutonRouge" href="statistiques.html" >Statistiques</a></li>
+		<li><a class="boutonOrange" href="questionnaireIntro.htm" >Questionnaire</a></li>
+		<li><a class="boutonJaune" href="Temoignage.html" >T&eacute;moignage</a></li>
+		<li><a class="boutonCV" href="CV.html" >Tuto CV</a></li>
+		<li><a class="boutonMauve" href="contact.html" >Contact</a></li>
+		<li><img id="logo-iut" src="images/logo_Iut.JPG"  alt="page d'accueil du site de l'iut de Lens"> </li>
+		<li><a href="CVA.html" class="anglais" id="boutonAnglais"></a></li>
+		<li><a href="CV.html" class="francais" id="boutonFrancais"></a></li>
+		<li><a href="https://www.facebook.com/IUT.DE.LENS/?fref=ts" class="facebook" id="boutonFacebook"></a></li>
+		<li><a href="https://twitter.com/IUT_lens" class="twitter" id="boutonTwitter"></a></li>
+		<li><a href="https://www.instagram.com/explore/locations/322245/" class="instagram" id="boutonInstagram"></a></li>
+		<li><a href="https://www.youtube.com/user/servicecomiut" class="youtube" id="boutonYoutube"></a></li>
+	</ul>
+</nav>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+
+
+<form method="post"> 
+<fieldset>
+	<legend id="questionNumero">Question 1</legend> 			
+	<div><br>	
+			<div id="questionPosee">L’Université d’Artois est présente dans les villes de :</div><br>
+			<div id="questionAide">Choisissez la/les bonnes réponse(s) :</div><br>
+			<input type="checkbox" name="box" value ="arras" />Arras<br>
+			<input type="checkbox" name="test[]" value ="bethune" />Béthune<br>
+			<input type="checkbox" name="test[]" value ="douai" />Douai<br>
+			<input type="checkbox" name="test[]" value ="lens" />Lens<br>
+			<input type="checkbox" name="test[]" value ="lievin" />Liévin<br>
+			<input type="checkbox" name="test[]" value ="valenciennes"/>
+			Valenciennes<br><br>
+			</div>
+			</fieldset>
+</form>
+<div id="flip"><input type="button" value="Reponse"></div>
+<div id="panel"><h3>Les réponses sont :</h3>
+
+<div class="reponse-vrai">
+☑		Arras <br>
+☑		Béthune <br>
+☑		Douai <br>
+☑		Lens <br>
+☑		Liévin <br>
+</div>
+
+<div class="reponse-faux">
+☒		Valenciennes
+</div>
+
+
+<div class="texte">
+L'université dArtois est implantée sur les site d'Arras, Béthune, Douai, Lens et Liévin et acceuille plus de 10500 étudiants.<br>
+Crée en 1992, elle comprend 8 UFR (Unité de Formation et de Recherche), 2 IUT (Institut Universitaire de Technologie) et 16 centres de recherche.<br> 
+C'est une université moderne et dynamique qui propose de nombreux services à l'étudiant :<br>
+<a href="http://www.univ-artois.fr/Vie-etudiante/Sport">services des sports</a>, <a href="www.univ-artois.fr/Vie-etudiante/Sante">service santé</a>,<a href="http://www.univ-artois.fr/Vie-etudiante/Vie-pratique">service d'aide à l'orientation et à l'insertion professionnelle</a>, <a href="http://www.univ-artois.fr/Vie-etudiante/Accueil-des-etudiants-en-situation-de-handicap">acceuil des étudiants en situation de handicap vie culturelle</a>...
+<br></div>
+
+<img src="images/arras.jpg" alt="Arras" style="width:152px;height:114px;">
+<img src="images/fac_bethune.jpg" alt="Arras"   style="width:152px;height:114px;">
+
+<img src="images/iut_bethune.jpg" alt="Bethune" style="width:152px;height:114px;">
+
+<img src="images/douai.jpg" alt="Douai" style="width:152px;height:114px;">
+
+<img src="images/fac_lens.jpg" alt="Lens" style="width:152px;height:114px;">
+
+<img src="images/lens.jpg" alt="Lens" style="width:152px;height:114px;">
+
+<img src="images/lievin.jpg" alt="Lievin" style="width:152px;height:114px;">
+<br>
+ 
+<form action="./questionnaireIntro.htm">
+    <input type="submit" value="Precedent"/>
+</form> 
+
+<form action="./question2.htm">
+    <input type="submit" value="Suivant"/>
+</form> 
+</div>
+
+
+<br>
+
+
+</body>
+</html>
+
+
+
